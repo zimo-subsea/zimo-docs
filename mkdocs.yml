@@ -1,0 +1,56 @@
+site_name: ZIMO Docs
+site_description: Produktdokumentasjon og nedlastinger (STEP, PDF, datablad, firmware)
+site_url: http://127.0.0.1:8000/
+
+theme:
+  name: material
+  logo: assets/logos/ZimoLogoWhite.svg
+  language: nb
+
+  # Mørk som standard
+  palette:
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Lys modus
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Mørk modus
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.sections
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Hjem: index.md
+  - Produkter:
+      - Oversikt: products/index.md
+      - FOG gyro: products/fog-gyro/index.md
+      - Quartz trykksensor: products/quartz-pressure-sensor/index.md
+      - Lys: products/lights/index.md
+      - Styresystem: products/control-system/index.md
+      - Subsea display: products/subsea-display/index.md
+      - Subsea converter: products/subsea-converter/index.md
+      - Kamera: products/camera/index.md
