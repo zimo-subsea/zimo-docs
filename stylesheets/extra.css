@@ -1,0 +1,18 @@
+:root {
+  --zimo-accent: #5200C7;
+}
+
+/* Dark mode (slate) */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #000000;
+  --md-accent-fg-color: var(--zimo-accent);
+
+  /* Litt strammere “black site” feel */
+  --md-default-bg-color: #0b0b0b;
+}
+
+/* Light mode (om du bruker toggle) */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #000000;
+  --md-accent-fg-color: var(--zimo-accent);
+}
