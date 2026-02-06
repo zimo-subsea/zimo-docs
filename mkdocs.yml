@@ -1,6 +1,6 @@
 site_name: ZIMO Docs
 site_description: Produktdokumentasjon og nedlastinger (STEP, PDF, datablad, firmware)
-site_url: http://127.0.0.1:8000/
+site_url: https://docs.zimo.no/
 
 theme:
   name: material
@@ -44,13 +44,12 @@ extra_css:
   - stylesheets/extra.css
 
 nav:
-  - Hjem: index.md
-  - Produkter:
-      - Oversikt: products/index.md
-      - FOG gyro: products/fog-gyro/index.md
-      - Quartz trykksensor: products/quartz-pressure-sensor/index.md
-      - Lys: products/lights/index.md
-      - Styresystem: products/control-system/index.md
-      - Subsea display: products/subsea-display/index.md
-      - Subsea converter: products/subsea-converter/index.md
-      - Kamera: products/camera/index.md
+  - Home: index.md
+  - Products:
+      - Products: products/index.md
+      - Camera System: products/camera-system/index.md
+      - Lights: products/lights/index.md
+      - FOG Gyro: products/fog-gyro/index.md
+      - Quartz Pressure Sensor: products/quartz-pressure-sensor/index.md
+      - Subsea Converter: products/subsea-converter/index.md
+      - Subsea Display: products/subsea-display/index.md

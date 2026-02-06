@@ -1,11 +1,21 @@
-# Produkter
+# Products
 
-Velg et produkt:
+Select a product:
 
-- [FOG gyro](fog-gyro/index.md)
-- [Quartz trykksensor](quartz-pressure-sensor/index.md)
-- [Lys](lights/index.md)
-- [Styresystem](control-system/index.md)
-- [Subsea display](subsea-display/index.md)
-- [Subsea converter](subsea-converter/index.md)
-- [Kamera](camera/index.md)
+## Camera System
+- [Camera System](camera-system/index.md)
+
+## Lights
+- [Lights](lights/index.md)
+
+## FOG Gyro
+- [FOG Gyro](fog-gyro/index.md)
+
+## Quartz Pressure Sensor
+- [Quartz Pressure Sensor](quartz-pressure-sensor/index.md)
+
+## Subsea Converter
+- [Subsea Converter](subsea-converter/index.md)
+
+## Subsea Display
+- [Subsea Display](subsea-display/index.md)

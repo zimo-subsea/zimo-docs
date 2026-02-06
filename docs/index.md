@@ -1,10 +1,10 @@
 # ZIMO Docs
 
-Intern/ekstern produktdokumentasjon for ZIMO.
+Internal and external product documentation for ZIMO.
 
-Her finner du:
-- Produktoversikt
-- Nedlastinger (STEP, PDF, datablad, firmware)
-- Bilder og koblingsinfo der det er relevant
+Here you will find:
+- Product overview
+- Downloads (STEP, PDF, datasheets, firmware)
+- Images and connection information where relevant
 
-➡️ Gå til: **[Produkter](products/index.md)**
+➡️ Go to: **[Products](products/index.md)**
