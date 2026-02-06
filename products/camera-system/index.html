@@ -949,22 +949,20 @@
 <hr />
 <h2 id="system-overview">System Overview<a class="headerlink" href="#system-overview" title="Permanent link">&para;</a></h2>
 <p>At a high level, the camera transmits video over a <strong>SerDes link</strong> to the processing module. The processing module can then stream video topside via <strong>Ethernet or fiber</strong>, using compression levels that match the available link bandwidth.</p>
-<div class="highlight"><pre><span></span><code>flowchart LR
-  CAM[Subsea Camera Module\n(SerDes, 4K Global Shutter)] --&gt;|SerDes link| PROC[Camera Processing Module\n(4 or 8 SerDes ports)]
-  PROC --&gt;|Ethernet| NET[Topside / Network / Recorder]
-  PROC --&gt;|Fiber| FIB[Fiber Link]
-  NET --&gt; VIEW[Operator UI / VMS / Applications]
-  FIB --&gt; VIEW
-</code></pre></div>
+<pre class="mermaid"><code>flowchart LR
+  CAM["Subsea Camera Module&lt;br/&gt;(SerDes, 4K Global Shutter)"] --&gt;|SerDes link| PROC["Camera Processing Module&lt;br/&gt;(4 or 8 SerDes ports)"]
+  PROC --&gt;|Ethernet| NET["Topside / Network / Recorder"]
+  PROC --&gt;|Fiber| FIB["Fiber Link"]
+  NET --&gt; VIEW["Operator UI / VMS / Applications"]
+  FIB --&gt; VIEW</code></pre>
 <h3 id="bandwidth-and-compression">Bandwidth and compression<a class="headerlink" href="#bandwidth-and-compression" title="Permanent link">&para;</a></h3>
 <p>Your <strong>available line bandwidth</strong> determines how much compression is required. Higher bandwidth allows lower compression (higher quality), while constrained links require more aggressive compression.</p>
-<div class="highlight"><pre><span></span><code>flowchart TD
+<pre class="mermaid"><code>flowchart TD
   BW[Available line bandwidth] --&gt; DEC{Compression required?}
   DEC --&gt;|High bandwidth| RAW[Raw / Low compression\nHigher quality, higher bitrate]
   DEC --&gt;|Limited bandwidth| ENC[H.264 / H.265 / MJPEG\nLower bitrate, tunable quality]
   RAW --&gt; OUT[Ethernet / Fiber output]
-  ENC --&gt; OUT
-</code></pre></div>
+  ENC --&gt; OUT</code></pre>
 <hr />
 <h2 id="subsea-camera-module">Subsea Camera Module<a class="headerlink" href="#subsea-camera-module" title="Permanent link">&para;</a></h2>
 <p>A compact SerDes camera designed for subsea use with robust materials and minimal startup/latency overhead.</p>
@@ -1016,7 +1014,7 @@
 <li>Enter the module <strong>IP address</strong>  </li>
 <li>Adjust camera and stream settings</li>
 </ol>
-<div class="highlight"><pre><span></span><code>sequenceDiagram
+<pre class="mermaid"><code>sequenceDiagram
   participant User as Operator / Engineer
   participant Browser as Web Browser
   participant Proc as Processing Module (Web UI)
@@ -1025,8 +1023,7 @@
   Proc--&gt;&gt;Browser: Web UI page
   User-&gt;&gt;Browser: Change settings (codec/FPS/image controls)
   Browser-&gt;&gt;Proc: Apply configuration
-  Proc--&gt;&gt;Browser: Confirmation / updated status
-</code></pre></div>
+  Proc--&gt;&gt;Browser: Confirmation / updated status</code></pre>
 <h3 id="integration-and-constraints">Integration and constraints<a class="headerlink" href="#integration-and-constraints" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Available as:</li>
@@ -1121,6 +1118,10 @@
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../javascripts/mermaid-init.js"></script>
       
     
   </body>
