@@ -18,8 +18,8 @@ pip install -r requirements.txt
 ## Run locally
 ```
 mkdocs serve
-Open: http://127.0.0.1:8000
 ```
+Open: http://127.0.0.1:8000
 
 ## Edit docs
 Edit files in /docs
