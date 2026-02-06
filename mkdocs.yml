@@ -30,7 +30,7 @@ theme:
 plugins:
   - search
 
-repo_name: ZIMO-AS/zimo-docs
+repo_name: ZiMO
 repo_url: https://github.com/zimo-subsea/
 
 
@@ -61,7 +61,8 @@ extra_javascript:
 nav:
   - Home: https://zimo.no
   - Products:
-      - Camera System: products/camera-system/index.md
+      - Camera: products/camera/index.md
+      - Vision Processing Unit: products/vpu/index.md
       - Lights: products/lights/index.md
       - FOG Gyro: products/fog-gyro/index.md
       - Quartz Pressure Sensor: products/quartz-pressure-sensor/index.md
