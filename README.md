@@ -31,6 +31,8 @@ Config lives in mkdocs.yml
 git add .
 git commit -m "docs: update"
 git push
+```
 Deploy site
+```
 mkdocs gh-deploy
 ```
