@@ -5,7 +5,7 @@ site_url: https://docs.zimo.no/
 theme:
   name: material
   logo: assets/logos/ZimoLogoWhite.svg
-  language: nb
+  language: en
 
   palette:
     - scheme: slate
@@ -20,6 +20,7 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
+    - navigation.tabs
     - navigation.top
     - navigation.sections
     - content.code.copy
@@ -28,6 +29,10 @@ theme:
 
 plugins:
   - search
+
+repo_name: ZIMO-AS/zimo-docs
+repo_url: https://github.com/zimo-subsea/
+
 
 markdown_extensions:
   - admonition
@@ -43,6 +48,9 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 
+extra:
+  homepage: https://zimo.no
+
 extra_css:
   - stylesheets/extra.css
 
@@ -51,9 +59,8 @@ extra_javascript:
   - javascripts/mermaid-init.js
 
 nav:
-  - Home: index.md
+  - Home: https://zimo.no
   - Products:
-      - Products: products/index.md
       - Camera System: products/camera-system/index.md
       - Lights: products/lights/index.md
       - FOG Gyro: products/fog-gyro/index.md
