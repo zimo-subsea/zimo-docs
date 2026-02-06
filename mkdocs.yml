@@ -7,7 +7,6 @@ theme:
   logo: assets/logos/ZimoLogoWhite.svg
   language: nb
 
-  # Mørk som standard
   palette:
     - scheme: slate
       toggle:
@@ -38,10 +37,18 @@ markdown_extensions:
   - toc:
       permalink: true
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - javascripts/mermaid-init.js
 
 nav:
   - Home: index.md

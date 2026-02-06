@@ -15,10 +15,10 @@ At a high level, the camera transmits video over a **SerDes link** to the proces
 
 ```mermaid
 flowchart LR
-  CAM[Subsea Camera Module\n(SerDes, 4K Global Shutter)] -->|SerDes link| PROC[Camera Processing Module\n(4 or 8 SerDes ports)]
-  PROC -->|Ethernet| NET[Topside / Network / Recorder]
-  PROC -->|Fiber| FIB[Fiber Link]
-  NET --> VIEW[Operator UI / VMS / Applications]
+  CAM["Subsea Camera Module<br/>(SerDes, 4K Global Shutter)"] -->|SerDes link| PROC["Camera Processing Module<br/>(4 or 8 SerDes ports)"]
+  PROC -->|Ethernet| NET["Topside / Network / Recorder"]
+  PROC -->|Fiber| FIB["Fiber Link"]
+  NET --> VIEW["Operator UI / VMS / Applications"]
   FIB --> VIEW
 ```
 
